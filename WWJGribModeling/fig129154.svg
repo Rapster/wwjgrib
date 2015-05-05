@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="828" height="455" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<ellipse fill="none" stroke="black" stroke-width="1" stroke-opacity="1" cx="113" cy="225" rx="7" ry="7" />
+	<line stroke="black" stroke-opacity="1" x1="100" y1="239" x2="126" y2="239" />
+	<line stroke="black" stroke-opacity="1" x1="113" y1="233" x2="113" y2="250" />
+	<line stroke="black" stroke-opacity="1" x1="113" y1="250" x2="101" y2="264" />
+	<line stroke="black" stroke-opacity="1" x1="113" y1="250" x2="125" y2="264" />
+	<text font-family="MS Shell Dlg" font-size="12" fill="#000000" xml:space="preserve" text-anchor="middle" x="115" y="280">Viewer</text>
+</g>
+<g>
+	<rect fill="none" stroke="black" stroke-width="1" stroke-opacity="1" x="253" y="72" width="563" height="371" />
+	<text font-family="MS Shell Dlg" font-size="12" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="535" y="87">WWJGrib</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="12" fill="#000000" xml:space="preserve" x="515" y="213">&lt;&lt;include&gt;&gt;</text>
+</g>
+<g>
+	<ellipse fill="#808080" stroke="none" cx="452" cy="255" rx="76" ry="22" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="449" cy="252" rx="76" ry="22" />
+</g>
+<g>
+	<ellipse fill="#808080" stroke="none" cx="689" cy="167" rx="83" ry="27" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="686" cy="164" rx="83" ry="27" />
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="12" fill="#000000" xml:space="preserve" x="623" y="170">Selectionner ficher .grb</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="12" fill="#000000" xml:space="preserve" x="392" y="255">Consulter data grib</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="605" y1="193" x2="597" y2="189" />
+	<line stroke="black" stroke-opacity="1" x1="605" y1="193" x2="601" y2="200" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="508" y1="229" x2="605" y2="193" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="140" y1="253" x2="372" y2="252" />
+</g>
+</svg>

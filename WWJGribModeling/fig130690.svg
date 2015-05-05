@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="769" height="342" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<rect fill="#dcdcdc" stroke="black" stroke-width="1" stroke-opacity="1" x="413" y="148" width="123" height="29" />
+	<polygon fill="#dcdcdc" stroke="black" stroke-opacity="1" points="413,148 423,138 546,138 546,167 536,177 536,148 413,148" />
+	<line stroke="black" stroke-opacity="1" x1="536" y1="148" x2="546" y2="138" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-anchor="middle" x="475" y="162">:WWJGrib</text>
+</g>
+<g>
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="311" y="288" width="3" height="41" />
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="201" y="326" width="113" height="3" />
+	<rect fill="#c0ffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="197" y="284" width="114" height="42" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-anchor="middle" x="254" y="302">&lt;&lt;artifact&gt;&gt;</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="254" y="324">WorldWindJava</text>
+	<polygon fill="none" stroke="black" stroke-opacity="1" points="296,288 303,288 303,292 307,292 307,305 296,305 296,288" />
+	<line stroke="black" stroke-opacity="1" x1="303" y1="288" x2="307" y2="292" />
+</g>
+<g>
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="753" y="287" width="3" height="41" />
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="643" y="325" width="113" height="3" />
+	<rect fill="#c0ffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="639" y="283" width="114" height="42" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-anchor="middle" x="696" y="301">&lt;&lt;artifact&gt;&gt;</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="696" y="323">ViperFish</text>
+	<polygon fill="none" stroke="black" stroke-opacity="1" points="738,287 745,287 745,291 749,291 749,304 738,304 738,287" />
+	<line stroke="black" stroke-opacity="1" x1="745" y1="287" x2="749" y2="291" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="509" y1="177" x2="510" y2="185" />
+	<line stroke="black" stroke-opacity="1" x1="509" y1="177" x2="517" y2="175" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="663" y1="282" x2="509" y2="177" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="446" y1="177" x2="437" y2="175" />
+	<line stroke="black" stroke-opacity="1" x1="446" y1="177" x2="444" y2="185" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="288" y1="283" x2="446" y2="177" />
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="316" y="242">&lt;&lt;deploy&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="559" y="240">&lt;&lt;deploy&gt;&gt;</text>
+</g>
+</svg>

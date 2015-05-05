@@ -1,0 +1,303 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+
+<head>
+<title>wwwjgrib
+Documentation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">wwwjgrib<br />Documentation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refpackage128258"></a>
+<p></p><ul><li>Java package : fr.enib.wwwjgrib</li>
+</ul>
+<p>Depends on <a href="index.html#refpackage128898"><b>view</b></a></p><a name="refuse case view129154"></a>
+<h1 class ="view">1 Use Case View :</h1>
+<div class="sub">
+<a name="refuse case diagram129154"></a>
+<p align="center"><embed src="fig129154.svg" width="828" height="455"/></p>
+ <p align="center"><b>Cas d'utilisations</b></p><p><br /></p><p><br /></p>
+<a name="refsequence diagram132994"></a>
+<p align="center"><embed src="fig132994.svg" width="1060" height="568"/></p>
+ <p align="center"><b>Diagramme de sequence</b></p><p><br /></p><p><br /></p>
+<a name="refclass140930"></a>
+<h2 class ="class">1.1 Class Viewer</h2>
+<p>Declaration :</p><ul><li>Java : package class Viewer </li></ul><p>Stereotype: actor</p>
+<a name="refuse case129154"></a>
+<h2 class ="usecase">1.2 Use Case Consulter data grib</h2>
+<div class="sub">
+</div>
+<a name="refuse case129282"></a>
+<h2 class ="usecase">1.3 Use Case Selectionner ficher .grb</h2>
+</div>
+<a name="refdeployment view129922"></a>
+<h1 class ="view">2 Deployment View :</h1>
+<div class="sub">
+<a name="refdeployment diagram130690"></a>
+<p align="center"><embed src="fig130690.svg" width="769" height="342"/></p>
+ <p align="center"><b>Deployment Diagram</b></p><p><br /></p><p><br /></p>
+<a name="refdeployment diagram131842"></a>
+<p align="center"><embed src="fig131842.svg" width="508" height="441"/></p>
+ <p align="center"><b>Activity Diagram</b></p><p><br /></p><p><br /></p>
+<a name="refnode128002"></a>
+<table><tr><td><div class="element">Node <b>WWJGrib</b></div></td></tr></table>
+<a name="refartifact134018"></a>
+<table><tr><td><div class="element">Artifact <b>WorldWindJava</b></div></td></tr></table>
+<p>Depends on <a href="index.html#refnode128002"><b>WWJGrib</b></a></p><p><i></i></p>
+<a name="refartifact134146"></a>
+<table><tr><td><div class="element">Artifact <b>ViperFish</b></div></td></tr></table>
+<p>Depends on <a href="index.html#refnode128002"><b>WWJGrib</b></a></p><p><i></i></p>
+</div>
+<a name="refclass view130178"></a>
+<h1 class ="view">3 Class View WWJGrib</h1>
+<div class="sub">
+<a name="refclass diagram129282"></a>
+<p align="center"><embed src="fig129282.svg" width="838" height="1190"/></p>
+ <p align="center"><b>WWJGrib - Diagramme de Classes</b></p><p><br /></p><p><br /></p>
+<a name="refclass diagram134146"></a>
+<p align="center"><embed src="fig134146.svg" width="968" height="497"/></p>
+ <p align="center"><b>WindLayer - Diagramme de Classes</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="refpackage128386"></a>
+<h1 class ="package">4 Package controller</h1>
+<p></p><ul><li>Java package : fr.enib.wwwjgrib.controller</li>
+</ul>
+<p>Depends on <a href="index.html#refpackage128898"><b>view</b></a></p><p>Depends on <a href="index.html#refpackage128642"><b>model</b></a></p><div class="sub">
+<a name="refclass view128002"></a>
+<h2 class ="view">4.1 Class View controller</h2>
+<div class="sub">
+<a name="refclass128002"></a>
+<h3 class ="class">4.1.1 Class ApplicationEventDispatcher</h3>
+<p>This &lt;u&gt;Singleton&lt;/u&gt; is used to fire an event everywhere in the application @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public class ApplicationEventDispatcher </li></ul><p>Artifact : <a href="index.html#refartifact128002"><b>ApplicationEventDispatcher</b></a></p><div class="sub">
+<div class="sub">
+<a name="refrelation128002"></a>
+<table><tr><td><div class="element">Relation <b>appEventDispatcher (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : static, - appEventDispatcher : <a href="index.html#refclass128002"><b>ApplicationEventDispatcher</b></a>=  null</li><li>Java : private static <a href="index.html#refclass128002"><b>ApplicationEventDispatcher</b></a> appEventDispatcher</li></ul><a name="refrelation128130"></a>
+<table><tr><td><div class="element">Relation <b>windListeners (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : static, - windListeners : <a href="index.html#refclass128130"><b>WindListener</b></a>=  null</li><li>Java : private static List&lt;<a href="index.html#refclass128130"><b>WindListener</b></a>&gt; windListeners</li></ul><p>Stereotype: List</p>
+<a name="refoperation128002"></a>
+<table><tr><td><div class="element">Operation <b>getInstance</b></div></td></tr></table><p>Returns a new instance of ApplicationEventDispatcher @return a new instance of ApplicationEventDispatcher if it's not referenced, else returns null<br /></p><p>Declaration :</p><ul><li>Uml : static, + getInstance() : <a href="index.html#refclass128002"><b>ApplicationEventDispatcher</b></a></li><li>Java : public static <a href="index.html#refclass128002"><b>ApplicationEventDispatcher</b></a> getInstance()</li></ul><a name="refoperation128130"></a>
+<table><tr><td><div class="element">Operation <b>ApplicationEventDispatcher</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - ApplicationEventDispatcher() : </li><li>Java : private ApplicationEventDispatcher()</li></ul><a name="refoperation128258"></a>
+<table><tr><td><div class="element">Operation <b>addWindListener</b></div></td></tr></table><p>This method add a windListener in the listener's list @param windListener The souscriptor<br /></p><p>Declaration :</p><ul><li>Uml : static, + addWindListener(inout windListener : <a href="index.html#refclass128130"><b>WindListener</b></a>) : void</li><li>Java : public static void addWindListener(<a href="index.html#refclass128130"><b>WindListener</b></a> windListener)</li></ul><a name="refoperation128386"></a>
+<table><tr><td><div class="element">Operation <b>removeWindListener</b></div></td></tr></table><p>This method remove a windListener from the listener's list @param windListener The souscriptor<br /></p><p>Declaration :</p><ul><li>Uml : static, + removeWindListener(inout windListener : <a href="index.html#refclass128130"><b>WindListener</b></a>) : void</li><li>Java : public static void removeWindListener(<a href="index.html#refclass128130"><b>WindListener</b></a> windListener)</li></ul><a name="refoperation128514"></a>
+<table><tr><td><div class="element">Operation <b>fireWindEvent</b></div></td></tr></table><p>This method call &lt;code&gt;windValuesChanged()&lt;/code&gt; each &lt;code&gt;WindListener&lt;/code&gt; object @param windEv The windFieldEvent<br /></p><p>Declaration :</p><ul><li>Uml : static, + fireWindEvent(inout windEv : <a href="index.html#refclass128258"><b>WindFieldEvent</b></a>) : void</li><li>Java : public static void fireWindEvent(<a href="index.html#refclass128258"><b>WindFieldEvent</b></a> windEv)</li></ul><a name="refoperation128642"></a>
+<table><tr><td><div class="element">Operation <b>getWindListeners</b></div></td></tr></table><p>@return The windListeners<br /></p><p>Declaration :</p><ul><li>Uml : + getWindListeners() : <a href="index.html#refclass128130"><b>WindListener</b></a></li><li>Java : public List&lt;<a href="index.html#refclass128130"><b>WindListener</b></a>&gt; getWindListeners()</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation128258"><b>addWindListener</b></a> , <a href="index.html#refoperation128514"><b>fireWindEvent</b></a> , <a href="index.html#refoperation128002"><b>getInstance</b></a> , <a href="index.html#refoperation128642"><b>getWindListeners</b></a> , <a href="index.html#refoperation128386"><b>removeWindListener</b></a> </p>
+<a name="refclass128130"></a>
+<h3 class ="class">4.1.2 Class WindListener</h3>
+<p>The WindListener interface should be implemented for receiving many windField object for displaying in the windLayer. @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public interface WindListener extends EventListener </li></ul><p>Directly inherited by : <a href="index.html#refclass129410"><b>WindLayer</b></a> </p>
+<p>Artifact : <a href="index.html#refartifact128258"><b>WindListener</b></a></p><p>Stereotype: interface</p>
+<div class="sub">
+<div class="sub">
+<a name="refoperation129282"></a>
+<table><tr><td><div class="element">Operation <b>windValuesChanged</b></div></td></tr></table><p>This method can be called when a windField is created @param windEvent the event which own a windField<br /></p><p>Declaration :</p><ul><li>Uml : + windValuesChanged(inout windEvent : <a href="index.html#refclass128258"><b>WindFieldEvent</b></a>) : void</li><li>Java : public void windValuesChanged(<a href="index.html#refclass128258"><b>WindFieldEvent</b></a> windEvent)</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation129282"><b>windValuesChanged</b></a> </p>
+<a name="refclass128258"></a>
+<h3 class ="class">4.1.3 Class WindFieldEvent</h3>
+<p>A WindFieldEvent is used to transmit a windField with the windLayer (the receptor) from the object MapPanel (the source) @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public class WindFieldEvent extends EventObject </li></ul><p>Artifact : <a href="index.html#refartifact128130"><b>WindFieldEvent</b></a></p><div class="sub">
+<div class="sub">
+<a name="refrelation128386"></a>
+<table><tr><td><div class="element">Relation <b>windField (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - windField : <a href="index.html#refclass128514"><b>WindField</b></a>=  null</li><li>Java : private <a href="index.html#refclass128514"><b>WindField</b></a> windField</li></ul><a name="refoperation128770"></a>
+<table><tr><td><div class="element">Operation <b>WindFieldEvent</b></div></td></tr></table><p>@param source The object on which the Event initially occurred. @param windField The windField to transmit<br /></p><p>Declaration :</p><ul><li>Uml : + WindFieldEvent(inout source : Object, inout windField : <a href="index.html#refclass128514"><b>WindField</b></a>) : </li><li>Java : public WindFieldEvent(Object source, <a href="index.html#refclass128514"><b>WindField</b></a> windField)</li></ul><a name="refoperation128898"></a>
+<table><tr><td><div class="element">Operation <b>WindFieldEvent</b></div></td></tr></table><p>@param source<br /></p><p>Declaration :</p><ul><li>Uml : + WindFieldEvent(inout source : Object) : </li><li>Java : public WindFieldEvent(Object source)</li></ul><a name="refoperation129026"></a>
+<table><tr><td><div class="element">Operation <b>getWindField</b></div></td></tr></table><p>@return the windField<br /></p><p>Declaration :</p><ul><li>Uml : + getWindField() : <a href="index.html#refclass128514"><b>WindField</b></a></li><li>Java : public <a href="index.html#refclass128514"><b>WindField</b></a> getWindField()</li></ul><a name="refoperation129154"></a>
+<table><tr><td><div class="element">Operation <b>setWindField</b></div></td></tr></table><p>@param windField the windField to set<br /></p><p>Declaration :</p><ul><li>Uml : + setWindField(inout windField : <a href="index.html#refclass128514"><b>WindField</b></a>) : void</li><li>Java : public void setWindField(<a href="index.html#refclass128514"><b>WindField</b></a> windField)</li></ul></div>
+</div>
+<p>All public operations : getSource , <a href="index.html#refoperation129026"><b>getWindField</b></a> , <a href="index.html#refoperation129154"><b>setWindField</b></a> </p>
+</div>
+<a name="refdeployment view128002"></a>
+<h2 class ="view">4.2 Deployment View controller</h2>
+<div class="sub">
+<a name="refartifact128002"></a>
+<table><tr><td><div class="element">Artifact <b>ApplicationEventDispatcher</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass128002"><b>ApplicationEventDispatcher</b></a></p>
+<a name="refartifact128130"></a>
+<table><tr><td><div class="element">Artifact <b>WindFieldEvent</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass128258"><b>WindFieldEvent</b></a></p>
+<a name="refartifact128258"></a>
+<table><tr><td><div class="element">Artifact <b>WindListener</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass128130"><b>WindListener</b></a></p>
+</div>
+</div>
+<a name="refpackage128642"></a>
+<h1 class ="package">5 Package model</h1>
+<p></p><ul><li>Java package : fr.enib.wwwjgrib.model</li>
+</ul>
+<p>Depends on <a href="index.html#refpackage128386"><b>controller</b></a></p><p>Depends on <a href="index.html#refpackage128898"><b>view</b></a></p><div class="sub">
+<a name="refclass view128258"></a>
+<h2 class ="view">5.1 Class View model</h2>
+<div class="sub">
+<a name="refclass128514"></a>
+<h3 class ="class">5.1.1 Class WindField</h3>
+<p>The &lt;code&gt;WindField&lt;/code&gt; represents a collection of winds @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public class WindField </li></ul><p>Artifact : <a href="index.html#refartifact128770"><b>WindField</b></a></p><div class="sub">
+<div class="sub">
+<a name="refrelation128898"></a>
+<table><tr><td><div class="element">Relation <b>winds (&lt;composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - winds : <a href="index.html#refclass129282"><b>Wind</b></a>=  null, multiplicity : 1..*</li><li>Java : private <a href="index.html#refclass129282"><b>Wind</b></a> winds</li></ul><a name="refoperation131714"></a>
+<table><tr><td><div class="element">Operation <b>WindField</b></div></td></tr></table><p>Creates a WindField<br /></p><p>Declaration :</p><ul><li>Uml : + WindField() : </li><li>Java : public WindField()</li></ul><a name="refoperation131842"></a>
+<table><tr><td><div class="element">Operation <b>WindField</b></div></td></tr></table><p>Creates a WindField - Recopy's Constructor @param windField<br /></p><p>Declaration :</p><ul><li>Uml : + WindField(inout windField : <a href="index.html#refclass128514"><b>WindField</b></a>) : </li><li>Java : public WindField(<a href="index.html#refclass128514"><b>WindField</b></a> windField)</li></ul><a name="refoperation131970"></a>
+<table><tr><td><div class="element">Operation <b>addWind</b></div></td></tr></table><p>@param wind the wind to be added in the list<br /></p><p>Declaration :</p><ul><li>Uml : + addWind(inout wind : <a href="index.html#refclass129282"><b>Wind</b></a>) : void</li><li>Java : public void addWind(<a href="index.html#refclass129282"><b>Wind</b></a> wind)</li></ul><a name="refoperation132098"></a>
+<table><tr><td><div class="element">Operation <b>removeWind</b></div></td></tr></table><p>@param wind the wind to be removed from the list<br /></p><p>Declaration :</p><ul><li>Uml : + removeWind(inout wind : <a href="index.html#refclass129282"><b>Wind</b></a>) : void</li><li>Java : public void removeWind(<a href="index.html#refclass129282"><b>Wind</b></a> wind)</li></ul><a name="refoperation132226"></a>
+<table><tr><td><div class="element">Operation <b>getWinds</b></div></td></tr></table><p>@return the winds<br /></p><p>Declaration :</p><ul><li>Uml : + getWinds() : <a href="index.html#refclass129282"><b>Wind</b></a></li><li>Java : public List&lt;<a href="index.html#refclass129282"><b>Wind</b></a>&gt; getWinds()</li></ul><a name="refoperation132354"></a>
+<table><tr><td><div class="element">Operation <b>setWinds</b></div></td></tr></table><p>@param winds the winds to set<br /></p><p>Declaration :</p><ul><li>Uml : + setWinds(inout winds : List&lt;Wind&gt;) : void</li><li>Java : public void setWinds(List&lt;Wind&gt; winds)</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation131970"><b>addWind</b></a> , <a href="index.html#refoperation132226"><b>getWinds</b></a> , <a href="index.html#refoperation132098"><b>removeWind</b></a> , <a href="index.html#refoperation132354"><b>setWinds</b></a> </p>
+<a name="refclass129282"></a>
+<h3 class ="class">5.1.2 Class Wind</h3>
+<p>Represents a wind @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public class Wind </li></ul><p>Artifact : <a href="index.html#refartifact128642"><b>Wind</b></a></p><div class="sub">
+<div class="sub">
+<a name="refattribute128514"></a>
+<table><tr><td><div class="element">Attribute <b>longitude</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - longitude : double</li><li>Java : private double longitude</li></ul><a name="refattribute128642"></a>
+<table><tr><td><div class="element">Attribute <b>latitude</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - latitude : double</li><li>Java : private double latitude</li></ul><a name="refattribute128770"></a>
+<table><tr><td><div class="element">Attribute <b>speed</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - speed : double</li><li>Java : private double speed</li></ul><a name="refattribute128898"></a>
+<table><tr><td><div class="element">Attribute <b>direction</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - direction : double</li><li>Java : private double direction</li></ul><a name="refoperation130178"></a>
+<table><tr><td><div class="element">Operation <b>Wind</b></div></td></tr></table><p>@param Longitude @param Latitude @param Speed @param Direction<br /></p><p>Declaration :</p><ul><li>Uml : + Wind(in Longitude : double, in Latitude : double, in Speed : double, in Direction : double) : </li><li>Java : public Wind(double Longitude, double Latitude, double Speed, double Direction)</li></ul><a name="refoperation130306"></a>
+<table><tr><td><div class="element">Operation <b>Wind</b></div></td></tr></table><p>Creates a Wind with longitude 0, latitude 0, speed 0, and direction 0.<br /></p><p>Declaration :</p><ul><li>Uml : + Wind() : </li><li>Java : public Wind()</li></ul><a name="refoperation130434"></a>
+<table><tr><td><div class="element">Operation <b>toString</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + toString() : String</li><li>Java : public String toString()</li></ul><p> Java annotation(s) :<ul>@Override<br /></ul><a name="refoperation130562"></a>
+<table><tr><td><div class="element">Operation <b>getWindSpeed</b></div></td></tr></table><p>@return the windSpeed<br /></p><p>Declaration :</p><ul><li>Uml : + getWindSpeed() : double</li><li>Java : public double getWindSpeed()</li></ul><a name="refoperation130690"></a>
+<table><tr><td><div class="element">Operation <b>getLongitude</b></div></td></tr></table><p>@return the Longitude<br /></p><p>Declaration :</p><ul><li>Uml : + getLongitude() : double</li><li>Java : public double getLongitude()</li></ul><a name="refoperation130818"></a>
+<table><tr><td><div class="element">Operation <b>setLongitude</b></div></td></tr></table><p>@param Longitude the Longitude to set<br /></p><p>Declaration :</p><ul><li>Uml : + setLongitude(in Longitude : double) : void</li><li>Java : public void setLongitude(double Longitude)</li></ul><a name="refoperation130946"></a>
+<table><tr><td><div class="element">Operation <b>getLatitude</b></div></td></tr></table><p>@return the Latitude<br /></p><p>Declaration :</p><ul><li>Uml : + getLatitude() : double</li><li>Java : public double getLatitude()</li></ul><a name="refoperation131074"></a>
+<table><tr><td><div class="element">Operation <b>setLatitude</b></div></td></tr></table><p>@param Latitude the Latitude to set<br /></p><p>Declaration :</p><ul><li>Uml : + setLatitude(in Latitude : double) : void</li><li>Java : public void setLatitude(double Latitude)</li></ul><a name="refoperation131202"></a>
+<table><tr><td><div class="element">Operation <b>getSpeed</b></div></td></tr></table><p>@return the Speed<br /></p><p>Declaration :</p><ul><li>Uml : + getSpeed() : double</li><li>Java : public double getSpeed()</li></ul><a name="refoperation131330"></a>
+<table><tr><td><div class="element">Operation <b>setSpeed</b></div></td></tr></table><p>@param Speed the Speed to set<br /></p><p>Declaration :</p><ul><li>Uml : + setSpeed(in Speed : double) : void</li><li>Java : public void setSpeed(double Speed)</li></ul><a name="refoperation131458"></a>
+<table><tr><td><div class="element">Operation <b>getDirection</b></div></td></tr></table><p>@return the Direction<br /></p><p>Declaration :</p><ul><li>Uml : + getDirection() : double</li><li>Java : public double getDirection()</li></ul><a name="refoperation131586"></a>
+<table><tr><td><div class="element">Operation <b>setDirection</b></div></td></tr></table><p>@param Direction the Direction to set<br /></p><p>Declaration :</p><ul><li>Uml : + setDirection(in Direction : double) : void</li><li>Java : public void setDirection(double Direction)</li></ul><a name="refrelation140802"></a>
+<table><tr><td><div class="element">Relation <b>&lt;composition&gt;</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : -  : <a href="index.html#refclass128514"><b>WindField</b></a></li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation131458"><b>getDirection</b></a> , <a href="index.html#refoperation130946"><b>getLatitude</b></a> , <a href="index.html#refoperation130690"><b>getLongitude</b></a> , <a href="index.html#refoperation131202"><b>getSpeed</b></a> , <a href="index.html#refoperation130562"><b>getWindSpeed</b></a> , <a href="index.html#refoperation131586"><b>setDirection</b></a> , <a href="index.html#refoperation131074"><b>setLatitude</b></a> , <a href="index.html#refoperation130818"><b>setLongitude</b></a> , <a href="index.html#refoperation131330"><b>setSpeed</b></a> , <a href="index.html#refoperation130434"><b>toString</b></a> </p>
+</div>
+<a name="refdeployment view128258"></a>
+<h2 class ="view">5.2 Deployment View model</h2>
+<div class="sub">
+<a name="refartifact128642"></a>
+<table><tr><td><div class="element">Artifact <b>Wind</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass129282"><b>Wind</b></a></p>
+<a name="refartifact128770"></a>
+<table><tr><td><div class="element">Artifact <b>WindField</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass128514"><b>WindField</b></a></p>
+</div>
+</div>
+<a name="refpackage128770"></a>
+<h1 class ="package">6 Package main</h1>
+<p></p><ul><li>Java package : fr.enib.wwwjgrib.main</li>
+</ul>
+<p>Depends on <a href="index.html#refpackage128770"><b>main</b></a></p><p>Depends on <a href="index.html#refpackage128898"><b>view</b></a></p><div class="sub">
+<a name="refclass view128386"></a>
+<h2 class ="view">6.1 Class View main</h2>
+<div class="sub">
+<a name="refclass128770"></a>
+<h3 class ="class">6.1.1 Class AppPanel</h3>
+<p>Panel's application which contains Viperfish and WolrdWind @author Jean-Didier<br /></p><p>Declaration :</p><ul><li>Java : public class AppPanel extends JPanel </li></ul><p>Artifact : <a href="index.html#refartifact128386"><b>AppPanel</b></a></p><div class="sub">
+<div class="sub">
+<a name="refattribute128002"></a>
+<table><tr><td><div class="element">Attribute <b>wwd</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - wwd : WorldWindowGLCanvas</li><li>Java : private WorldWindowGLCanvas wwd</li></ul><a name="refattribute128130"></a>
+<table><tr><td><div class="element">Attribute <b>statusBar</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - statusBar : StatusBar</li><li>Java : private StatusBar statusBar</li></ul><a name="refoperation129410"></a>
+<table><tr><td><div class="element">Operation <b>AppPanel</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + AppPanel(inout canvasSize : Dimension, inout includeStatusBar : boolean) : </li><li>Java : public AppPanel(Dimension canvasSize, boolean includeStatusBar)</li></ul><a name="refoperation129538"></a>
+<table><tr><td><div class="element">Operation <b>getWwd</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getWwd() : WorldWindowGLCanvas</li><li>Java : public WorldWindowGLCanvas getWwd()</li></ul><a name="refoperation129666"></a>
+<table><tr><td><div class="element">Operation <b>getStatusBar</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getStatusBar() : StatusBar</li><li>Java : public StatusBar getStatusBar()</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation129666"><b>getStatusBar</b></a> , <a href="index.html#refoperation129538"><b>getWwd</b></a> </p>
+<a name="refclass129026"></a>
+<h3 class ="class">6.1.2 Class Main</h3>
+<p>Test's class @author Serge Morvan @version $Id: Lancement min-proj S6I $<br /></p><p>Declaration :</p><ul><li>Java : public class Main </li></ul><p>Artifact : <a href="index.html#refartifact128514"><b>Main</b></a></p><div class="sub">
+<div class="sub">
+<a name="refextra class member128002"></a>
+<table><tr><td><div class="element">Extra Class Member <b>initialization</b></div></td></tr></table><p>Definition :</p><ul><li>Java : <pre>
+  static {<br />        if (Configuration.isMacOS()) {<br />            System.setProperty("apple.laf.useScreenMenuBar", "true");<br />            System.setProperty("com.apple.mrj.application.apple.menu.about.name", "World Wind Tabbed Pane Application");<br />            System.setProperty("com.apple.mrj.application.growbox.intrudes", "false");<br />        }<br />    }</pre></li></ul><a name="refclass129154"></a>
+<h4 class ="class">6.1.2.1 Class WWJPanel</h4>
+<p>Declaration :</p><ul><li>Java : public class WWJPanel extends JPanel </li></ul><p>nested in <a href="index.html#refclass129026"><b>Main</b></a></p>
+<div class="sub">
+<div class="sub">
+<a name="refattribute128258"></a>
+<table><tr><td><div class="element">Attribute <b>wwd</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # wwd : WorldWindowGLCanvas</li><li>Java : protected WorldWindowGLCanvas wwd</li></ul><a name="refattribute128386"></a>
+<table><tr><td><div class="element">Attribute <b>statusBar</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # statusBar : StatusBar</li><li>Java : protected StatusBar statusBar</li></ul><a name="refoperation129794"></a>
+<table><tr><td><div class="element">Operation <b>WWJPanel</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + WWJPanel(inout canvasSize : Dimension, inout includeStatusBar : boolean) : </li><li>Java : public WWJPanel(Dimension canvasSize, boolean includeStatusBar)</li></ul></div>
+</div>
+<a name="refoperation129922"></a>
+<table><tr><td><div class="element">Operation <b>main</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : static, + main(in args : String) : void</li><li>Java : public static void main(String[] args)</li></ul><a name="refoperation130050"></a>
+<table><tr><td><div class="element">Operation <b>insertBeforeCompass</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : static, + insertBeforeCompass(inout wwd : WorldWindow, inout layer : Layer) : void</li><li>Java : public static void insertBeforeCompass(WorldWindow wwd, Layer layer)</li></ul><a name="refrelation140546"></a>
+<table><tr><td><div class="element">Relation <b>&lt;unidirectional association&gt;</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : -  : Controller</li><li>Java : private Controller </li></ul><a name="refrelation140674"></a>
+<table><tr><td><div class="element">Relation <b>&lt;unidirectional association&gt;</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : -  : <a href="index.html#refclass129410"><b>WindLayer</b></a></li><li>Java : private <a href="index.html#refclass129410"><b>WindLayer</b></a> </li></ul><a name="refattribute157058"></a>
+<table><tr><td><div class="element">Attribute <b>controller</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : static, - controller : Controller = null</li><li>Java : private static Controller controller</li></ul><a name="refoperation189186"></a>
+<table><tr><td><div class="element">Operation <b>jItemOpenClicked</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : static, - jItemOpenClicked(in evt : ActionEvent) : void</li><li>Java : private static void jItemOpenClicked(ActionEvent evt)</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation130050"><b>insertBeforeCompass</b></a> , <a href="index.html#refoperation129922"><b>main</b></a> </p>
+</div>
+<a name="refdeployment view128130"></a>
+<h2 class ="view">6.2 Deployment View main</h2>
+<div class="sub">
+<a name="refartifact128386"></a>
+<table><tr><td><div class="element">Artifact <b>AppPanel</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass128770"><b>AppPanel</b></a></p>
+<a name="refartifact128514"></a>
+<table><tr><td><div class="element">Artifact <b>Main</b></div></td></tr></table>
+<p>From<br />Copyright (C) 2001, 2006 United States Government<br />as represented by the Administrator of the<br />National Aeronautics and Space Administration.<br />All Rights Reserved.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass129026"><b>Main</b></a></p>
+</div>
+</div>
+<a name="refpackage128898"></a>
+<h1 class ="package">7 Package view</h1>
+<p></p><ul><li>Java package : fr.enib.wwwjgrib.view</li>
+</ul>
+<p>Depends on <a href="index.html#refpackage128642"><b>model</b></a></p><p>Depends on <a href="index.html#refpackage128642"><b>model</b></a></p><p>Depends on <a href="index.html#refpackage128386"><b>controller</b></a></p><div class="sub">
+<a name="refclass view128514"></a>
+<h2 class ="view">7.1 Class View view</h2>
+<div class="sub">
+<a name="refclass129410"></a>
+<h3 class ="class">7.1.1 Class WindLayer</h3>
+<p>The layer which support the windField's diplay @author s8lepage<br /></p><p>Declaration :</p><ul><li>Java : public class WindLayer extends RenderableLayer implements <a href="index.html#refclass128130"><b>WindListener</b></a> </li></ul><p>Artifact : <a href="index.html#refartifact128898"><b>WindLayer</b></a></p><div class="sub">
+<div class="sub">
+<a name="refattribute572290"></a>
+<table><tr><td><div class="element">Attribute <b>barbs</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - barbs : Polyline, multiplicity : *</li><li>Java : private Polyline barbs</li></ul><p>Stereotype: list</p>
+<a name="refoperation132482"></a>
+<table><tr><td><div class="element">Operation <b>WindLayer</b></div></td></tr></table><p>Creates a windLayer which is associated with the existing ApplicationEventDispatcher<br /></p><p>Declaration :</p><ul><li>Uml : + WindLayer() : </li><li>Java : public WindLayer()</li></ul><p> Constraint :<ul>ApplicationEventDispatcher.addWindListener(this);</ul><a name="refoperation132610"></a>
+<table><tr><td><div class="element">Operation <b>windFieldValueChanged</b></div></td></tr></table><p>This method can be called when a windField is created @param windEvent the event which own a windField<br /></p><p>Declaration :</p><ul><li>Uml : + windFieldValueChanged(inout windEvent : <a href="index.html#refclass128258"><b>WindFieldEvent</b></a>) : void</li><li>Java : public void windFieldValueChanged(<a href="index.html#refclass128258"><b>WindFieldEvent</b></a> windEvent)</li></ul><a name="refoperation1324034"></a>
+<table><tr><td><div class="element">Operation <b>getBarbs</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getBarbs() : List&lt;Poyline&gt;</li><li>Java : public List&lt;Poyline&gt; getBarbs()</li></ul><a name="refoperation1324162"></a>
+<table><tr><td><div class="element">Operation <b>setBarbs</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setBarbs(in barbs : List&lt;Polyline&gt;) : </li><li>Java : public  setBarbs(List&lt;Polyline&gt; barbs)</li></ul><a name="refoperation1324290"></a>
+<table><tr><td><div class="element">Operation <b>doRender</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + doRender(in drawc : DrawContext) : void</li><li>Java : public void doRender(DrawContext drawc)</li></ul></div>
+</div>
+<p>All public operations : <a href="index.html#refoperation1324290"><b>doRender</b></a> , <a href="index.html#refoperation1324034"><b>getBarbs</b></a> , <a href="index.html#refoperation1324162"><b>setBarbs</b></a> , <a href="index.html#refoperation132610"><b>windFieldValueChanged</b></a> , <a href="index.html#refoperation129282"><b>windValuesChanged</b></a> </p>
+</div>
+<a name="refdeployment view128386"></a>
+<h2 class ="view">7.2 Deployment View view</h2>
+<div class="sub">
+<a name="refartifact128898"></a>
+<table><tr><td><div class="element">Artifact <b>WindLayer</b></div></td></tr></table>
+<p>To change this template, choose Tools | Templates<br />and open the template in the editor.<br /></p>
+<p>Stereotype: source</p>
+<p>Artifact <i>source</i> associated with : <a href="index.html#refclass129410"><b>WindLayer</b></a></p>
+</div>
+</div>
+</body>
+</html>

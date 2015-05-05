@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="968" height="497" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<polygon fill="#c0ffff" stroke="black" stroke-opacity="1" points="85,30 445,30 445,40 455,40 455,155 85,155 85,30" />
+	<line stroke="black" stroke-opacity="1" x1="445" y1="30" x2="455" y2="40" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="53">barbs= new ArrayList&lt;Polyline&gt;();</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="66">for( Wind wind: windEvent.getWindField().getWinds){</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="79">	//Traitement des coordonnées x1,x2,y1,y2 ...</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="92">	positions = new ArrayList&lt;Position&gt;();</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="105">              positions.add(Position.fromDegrees(y1, x1, wind.getDirection()));</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="118">              positions.add(Position.fromDegrees(y2, x2, wind.getDirection()));</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="131">              polylines.add(new Polyline(positions));</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="95" y="144">}</text>
+</g>
+<g>
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="928" y="38" width="3" height="109" />
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="600" y="144" width="331" height="3" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="596" y="34" width="332" height="110" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="762" y="47">WindLayer</text>
+	<line stroke="black" stroke-opacity="1" x1="596" y1="51" x2="928" y2="51" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="64">-</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="64">&lt;&lt;list&gt;&gt;</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="657" y="64">barbs : Polyline</text>
+	<line stroke="black" stroke-opacity="1" x1="596" y1="68" x2="928" y2="68" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="81">+</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="81">WindLayer()</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="96">+</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="96">windFieldValueChanged(inout windEvent : WindFieldEvent) : void</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="111">+</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="111">getBarbs() : List&lt;Poyline&gt;</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="126">+</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="126">setBarbs(in barbs : List&lt;Polyline&gt;)</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" x="600" y="141">+</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="615" y="141">doRender(in drawc : DrawContext) : void</text>
+</g>
+<g>
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="952" y="279" width="3" height="205" />
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="600" y="481" width="355" height="3" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="596" y="275" width="356" height="206" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="774" y="288">Polyline</text>
+	<line stroke="black" stroke-opacity="1" x1="596" y1="300" x2="952" y2="300" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="313">Polyline()</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="328">Polyline(inout positions : Iterable&lt;? extends LatLon&gt;, in elevation : double)</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="343">getColor() : Color</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="358">getTerrainConformance() : double</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="373">getLineWidth() : double</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="388">getLength() : double</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="403">getNumSubsegments() : int</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="418">isHighlighted() : boolean</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="433">isClosed() : boolean</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="448">addPointToSpan(inout p : Vec4, inout span : ArrayList) : ArrayList</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="463">getReferencePosition() : Position</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="600" y="478">getRestorableState() : String</text>
+</g>
+<g>
+	<polygon fill="#c0ffff" stroke="black" stroke-opacity="1" points="666,186 853,186 853,196 863,196 863,259 666,259 666,186" />
+	<line stroke="black" stroke-opacity="1" x1="853" y1="186" x2="863" y2="196" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="676" y="209">for (Polyline p : getBarbs()) {</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="676" y="222">       p.setColor(Color.YELLOW);</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="676" y="235">       p.render(drawc);</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="676" y="248">}</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="87" y1="318" x2="60" y2="311" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="60" y1="311" x2="60" y2="341" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="87" y1="345" x2="81" y2="338" />
+	<line stroke="black" stroke-opacity="1" x1="87" y1="345" x2="80" y2="350" />
+	<line stroke="black" stroke-opacity="1" x1="60" y1="341" x2="87" y2="345" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="500" y1="380" x2="506" y2="386" />
+	<line stroke="black" stroke-opacity="1" x1="500" y1="380" x2="506" y2="374" />
+	<line stroke="black" stroke-opacity="1" x1="595" y1="380" x2="500" y2="380" />
+</g>
+<g>
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="455" y1="91" x2="595" y2="91" />
+</g>
+<g>
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="764" y1="185" x2="764" y2="148" />
+</g>
+<g>
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="496" y="313" width="3" height="139" />
+	<rect fill="#808080" stroke="none" stroke-opacity="1" x="92" y="449" width="407" height="3" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="88" y="309" width="408" height="140" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="292" y="322">Position</text>
+	<line stroke="black" stroke-opacity="1" x1="88" y1="326" x2="496" y2="326" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="92" y="339">elevation : double</text>
+	<line stroke="black" stroke-opacity="1" x1="88" y1="343" x2="496" y2="343" />
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-decoration="underline" x="92" y="356">fromRadians(in latitude : double, in longitude : double, in elevation : double) : Position</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-decoration="underline" x="92" y="371">fromDegrees(in latitude : double, in longitude : double, in elevation : double) : Position</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="92" y="386">Position(inout latitude : Angle, inout longitude : Angle, in elevation : double)</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="92" y="401">Position(inout latLon : LatLon, in elevation : double)</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="92" y="416">getLatLon() : LatLon</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-decoration="underline" x="92" y="431">positionsCrossDateLine(inout positions : Iterable&lt;? extends Position&gt;) : boolean</text>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="92" y="446">toString() : String</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" text-decoration="underline" x="47" y="340">ZERO</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg" font-size="10" fill="#000000" xml:space="preserve" x="510" y="374">referenceCenterPosition</text>
+</g>
+</svg>
